@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "SkipVideoAd",
+	"description": "支持跳过优酷、腾讯和爱奇艺视频开头广告！",
+	"version": "1.0.0",
+	"content_scripts": 
+	[
+		{
+            "matches": ["*://*.v.qq.com/*","*://*.v.youku.com/*","*://*.iqiyi.com/*"],
+            "js": ["skip-ad.js"]
+        }
+	]
+}
